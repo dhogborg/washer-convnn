@@ -1,0 +1,11 @@
+__pycache__
+.venv
+output
+data
+audio
+data_01
+annotations
+models
+debug
+docker
+export

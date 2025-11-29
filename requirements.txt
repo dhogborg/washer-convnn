@@ -1,0 +1,12 @@
+numpy>=1.24.0
+pillow>=10.0.0
+librosa>=0.10.0
+scipy>=1.11.0
+sounddevice>=0.4.6
+torch>=2.2.0
+torchvision>=0.17.0
+matplotlib>=3.8.0
+paho-mqtt>=1.6.1
+onnx>=1.15.0
+onnxruntime>=1.18.0
+onnxscript>=0.5.6
