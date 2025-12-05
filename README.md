@@ -16,6 +16,12 @@ A simple €10 USB microphone, and a NanoPi with 1Gb ram.
 
 Recorded cycles, idle ambiance and random activity to sound files. Labeling in [https://labelstud.io/](label-studio).
 
+The spectrograms have distinct features depending on cycle and machine. Here is an example of wash cycle, dryer and spin program, all in 1/4 resolution.
+
+![wash spectrogram](graphs/spect_wash.png)
+![dryer spectrogram](graphs/spect_dryer.png)
+![spin spectrogram](graphs/spect_spin.png)
+
 ## Network design
 
 Before landing in the 2d spectrum classifier a 1d version was evaluated. The spectrum analyzer had better result in mixed conditions, at a lower resource usage. Accuracy increased again when using a resnet design.
