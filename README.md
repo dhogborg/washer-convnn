@@ -16,6 +16,14 @@ A simple €10 USB microphone, and a NanoPi with 1Gb ram.
 
 Recorded cycles, idle ambiance and random activity to sound files. Labeling in [https://labelstud.io/](label-studio).
 
+## Network design
+
+Before landing in the 2d spectrum classifier a 1d version was evaluated. The spectrum analyzer had better result in mixed conditions, at a lower resource usage. Accuracy increased again when using a resnet design.
+
+To save memory and compute, the spectrum is halved in resolution before passing though the classifier. Future development will try to get the same result with a 1/4 resolution that takes more accurate averages of the spectrum before classification.
+
+As of writing, the network contains about 4.3m parameters, which is a wonderful overkill for it's purpose.
+
 ## Results
 
 Graph of classification over an entire cycle.
