@@ -35,6 +35,10 @@ As of writing, the network contains about 4.3m parameters, which is a wonderful 
 Graph of classification over an entire cycle.
 ![graph](graphs/wash_2.png)
 
+This one with washer and dryer running at the same time (part of the time).
+
+![graph](graphs/washer_dryer_01.png)
+
 The "END" label is a small beep that is periodically emitted after cycle end. This has the potential to be a very good signal to the classifier, but more data is needed to train on it properly.
 
 ---
