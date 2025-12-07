@@ -18,7 +18,7 @@ from torchvision import transforms
 from annotations import AnnotationMap, encode_labels, labels_for_window, load_annotations
 from conv2d_model import CLASS_NAMES, CLASS_TO_INDEX, DEFAULT_IMAGE_SIZE, ConvClassifier, build_base_transform
 
-DEFAULT_DATA_DIR = Path("./data_01")
+DEFAULT_DATA_DIR = Path("./data/training")
 DEFAULT_ANNOTATIONS_FILE = Path("./annotations/annotations.json")
 SEGMENT_SECONDS = 10.0
 

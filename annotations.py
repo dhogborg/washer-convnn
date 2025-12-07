@@ -11,7 +11,7 @@ import numpy as np
 
 AnnotationSegment = Tuple[float, float, Tuple[str, ...]]
 AnnotationMap = Dict[str, List[AnnotationSegment]]
-_DEFAULT_AUDIO_SUFFIX = r"(?:\.m4a)?$"
+_DEFAULT_AUDIO_SUFFIX = r"(?:\.ogg)?$"
 
 
 def load_annotations(annotation_file: Path) -> AnnotationMap:

@@ -1,4 +1,4 @@
-"""Generate fixed-length spectrograms from an input m4a file."""
+"""Generate fixed-length spectrograms from an input ogg file."""
 
 from __future__ import annotations
 
@@ -16,8 +16,8 @@ BLOCK_SAMPLES = SAMPLE_RATE * BLOCK_SECONDS
 
 
 def parse_args() -> argparse.Namespace:
-	parser = argparse.ArgumentParser(description="Create 10-second spectrograms from an .m4a file")
-	parser.add_argument("--input", type=Path, help="Path to the source .m4a audio file")
+	parser = argparse.ArgumentParser(description="Create 10-second spectrograms from an .ogg file")
+	parser.add_argument("--input", type=Path, help="Path to the source .ogg audio file")
 	parser.add_argument("--output", type=Path, help="Directory where spectrogram PNGs will be written")
 	return parser.parse_args()
 

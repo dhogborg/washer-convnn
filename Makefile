@@ -1,9 +1,13 @@
 VENV = .venv
 PY   = $(VENV)/bin/python
 
+.PHONY: stash
+stash:
+	-@mv conv2d_model.pt models/conv2d_model_$(shell date +%Y%m%d_%H%M%S).pt
 
-train:
-	$(PY) train.py
+.PHONY: train
+train: stash
+	$(PY) conv2d_train.py
 
 .PHONY: docker
 docker:
